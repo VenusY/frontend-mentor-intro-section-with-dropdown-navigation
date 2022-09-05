@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.svg" alt="Snap logo" class="logo" />
+
+      <button class="nav-bar__nav-button nav-bar__hamburger-button">
+        <img
+          src="images/icon-menu.svg"
+          alt=""
+          class="nav-bar__hamburger-icon"
+        />
+      </button>
+
+      <div class="nav-container__transparent-background"></div>
+      <nav class="nav-container">
+        <button class="nav-bar__nav-button nav-bar__close-button">
+          <img
+            src="images/icon-close-menu.svg"
+            alt=""
+            class="nav-bar__close-icon"
+          />
+        </button>
+
+        <ul class="nav-bar">
+          <li class="nav-bar__item">
+            <button class="nav-bar__dropdown-button" id="features-button">
+              <p class="nav-bar__dropdown-text">Features</p>
+              <svg
+                class="nav-bar__dropdown-icon"
+                viewBox="0 0 10 6"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="nav-bar__dropdown-icon__stroke"
+                  stroke="#686868"
+                  stroke-width="1.5"
+                  fill="none"
+                  d="m1 1 4 4 4-4"
+                />
+              </svg>
+            </button>
+
+            <div
+              class="dropdown-menu dropdown-menu--right-0 dropdown-menu--hidden"
+              id="features-dropdown-menu"
+            >
+              <a href="#" class="dropdown-menu__link">
+                <div class="dropdown-menu__icon-container">
+                  <img
+                    src="images/icon-todo.svg"
+                    alt=""
+                    class="dropdown-menu__icon"
+                  />
+                </div>
+                <span class="dropdown-menu__text">Todo List</span>
+              </a>
+              <a href="#" class="dropdown-menu__link">
+                <div class="dropdown-menu__icon-container">
+                  <img
+                    src="images/icon-calendar.svg"
+                    alt=""
+                    class="dropdown-menu__icon"
+                  />
+                </div>
+                <span class="dropdown-menu__text">Calendar</span>
+              </a>
+              <a href="#" class="dropdown-menu__link">
+                <div class="dropdown-menu__icon-container">
+                  <img
+                    src="images/icon-reminders.svg"
+                    alt=""
+                    class="dropdown-menu__icon"
+                  />
+                </div>
+                <span class="dropdown-menu__text">Reminders</span>
+              </a>
+              <a href="#" class="dropdown-menu__link">
+                <div class="dropdown-menu__icon-container">
+                  <img
+                    src="images/icon-planning.svg"
+                    alt=""
+                    class="dropdown-menu__icon"
+                  />
+                </div>
+                <span class="dropdown-menu__text">Planning</span>
+              </a>
+            </div>
+          </li>
+
+          <li class="nav-bar__item">
+            <button class="nav-bar__dropdown-button" id="company-button">
+              <p class="nav-bar__dropdown-text">Company</p>
+              <svg
+                class="nav-bar__dropdown-icon"
+                viewBox="0 0 10 6"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="nav-bar__dropdown-icon__stroke"
+                  stroke="#686868"
+                  stroke-width="1.5"
+                  fill="none"
+                  d="m1 1 4 4 4-4"
+                />
+              </svg>
+            </button>
+
+            <div
+              class="dropdown-menu dropdown-menu--left-0 dropdown-menu--hidden"
+              id="company-dropdown-menu"
+            >
+              <a href="#" class="dropdown-menu__link">History</a>
+              <a href="#" class="dropdown-menu__link">Our Team</a>
+              <a href="#" class="dropdown-menu__link">Blog</a>
+            </div>
+          </li>
+
+          <li class="nav-bar__item">
+            <a href="#" class="nav-bar__link">Careers</a>
+          </li>
+
+          <li class="nav-bar__item">
+            <a href="#" class="nav-bar__link">About</a>
+          </li>
+        </ul>
+        <!-- .nav-bar -->
+
+        <ul class="account-actions">
+          <li class="account-actions__button">
+            <a href="#" class="account-actions__link account-actions__login"
+              >Login</a
+            >
+          </li>
+          <li class="account-actions__button">
+            <a href="#" class="account-actions__link account-actions__register"
+              >Register</a
+            >
+          </li>
+        </ul>
+        <!-- .account-actions -->
+      </nav>
+      <!-- .nav-container -->
+    </header>
+
+    <main>
+      <img
+        src="images/image-hero-desktop.png"
+        alt="Hero image"
+        class="hero-image hero-image--desktop"
+      />
+      <img
+        src="images/image-hero-mobile.png"
+        alt="Hero image"
+        class="hero-image hero-image--mobile"
+      />
+
+      <section class="text-section">
+        <h1 class="text-section__heading">
+          <span class="text-section__heading__first-word">Make</span> remote
+          work
+        </h1>
+
+        <p class="text-section__desc">
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+
+        <a href="#" class="text-section__button">Learn more</a>
+
+        <div class="text-section__logo-container">
+          <img
+            src="images/client-databiz.svg"
+            alt="Databiz logo"
+            class="text-section__databiz-logo"
+          />
+          <img
+            src="images/client-audiophile.svg"
+            alt="Audiophile logo"
+            class="text-section__audiophile-logo"
+          />
+          <img
+            src="images/client-meet.svg"
+            alt="Meet logo"
+            class="text-section__meet-logo"
+          />
+          <img
+            src="images/client-maker.svg"
+            alt="Maker logo"
+            class="text-section__maker-logo"
+          />
+        </div>
+      </section>
+    </main>
+    <script src="js/index.js"></script>
+  </body>
+</html>
