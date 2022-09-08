@@ -1,0 +1,29 @@
+.nav-container {
+  transition: right 100ms, visibility 100ms;
+
+  &__transparent-background {
+    transition: opacity 100ms, visibility 100ms;
+  }
+}
+
+.nav-bar__nav-button {
+  transition: transform 100ms;
+}
+
+.nav-bar__dropdown-icon {
+  transition: transform 100ms;
+}
+
+.dropdown-menu {
+  transition: height 100ms, visibility 100ms;
+}
+
+.text-section__button {
+  transition: background 100ms, color 100ms;
+}
+
+@media screen and (min-width: 1440px) {
+  .dropdown-menu {
+    transition: transform 100ms, visibility 100ms;
+  }
+}
